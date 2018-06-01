@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "heroku local:start",
+    "start": "node ./bin/www",
     "super": "supervisor ./bin/www",
     "start_old": "node ./bin/www",
     "migrate_local": "node_modules/.bin/sequelize db:migrate --url sqlite://$(pwd)/quiz.sqlite",
@@ -20,6 +20,7 @@
     "npm": "5.6.0"
   },
   "dependencies": {
+<<<<<<< HEAD
     "all": "0.0.0",
     "body-parser": "^1.18.3",
     "connect-session-sequelize": "^5.2.1",
@@ -27,10 +28,19 @@
     "debug": "^2.6.9",
     "ejs": "^2.5.9",
     "express": "^4.15.5",
+=======
+    "body-parser": "~1.18.2",
+    "connect-session-sequelize": "^5.2.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.15.5",
+>>>>>>> practica6
     "express-flash": "0.0.2",
     "express-override": "^0.1.9",
     "express-partials": "^0.3.0",
     "express-session": "^1.15.6",
+<<<<<<< HEAD
     "heroku": "^7.0.84",
     "method-override": "^2.3.10",
     "morgan": "^1.9.0",
@@ -38,6 +48,15 @@
     "sequelize": "^4.37.10",
     "sequelize-cli": "^4.0.0",
     "serve-favicon": "^2.4.5",
+=======
+    "heroku": "^7.0.47",
+    "method-override": "^2.3.10",
+    "morgan": "~1.9.0",
+    "pg": "^7.4.0",
+    "sequelize": "^4.37.5",
+    "sequelize-cli": "^4.0.0",
+    "serve-favicon": "~2.4.5",
+>>>>>>> practica6
     "supervisor": "^0.12.0"
   },
   "devDependencies": {

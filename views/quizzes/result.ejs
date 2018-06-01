@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <h1>
     Result:
@@ -14,3 +15,21 @@
 </p>
 
 <a href="/goback"><button>Go back</button></a>
+=======
+
+<h1>
+    Result:
+</h1>
+
+<p>
+    The answer <strong> <%= answer %> </strong> is <%= result ? 'Right' : 'Wrong' %>.
+</p>
+
+<p>
+    <% if (!result) { %>
+       <a href="/quizzes/<%= quiz.id %>/play?answer=<%= answer %>"> Try it again </a>
+    <% } %>
+</p>
+
+<a href="/quizzes"><button>Go back</button></a>
+>>>>>>> practica6
