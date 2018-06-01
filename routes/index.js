@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const express = require('express');
 const router = express.Router();
 
@@ -136,13 +135,6 @@ router.delete('/quizzes/:quizId(\\d+)/tips/:tipId(\\d+)',
     tipController.destroy);
 
 
-module.exports = router;
-=======
-const express = require('express');
-const router = express.Router();
-
-const quizController = require('../controllers/quiz');
-
 /* GET home page. */
 router.get('/', (req, res, next) => {
   res.render('index');
@@ -175,4 +167,4 @@ router.get('/quizzes/:quizId(\\d+)/check', quizController.check);
 
 
 module.exports = router;
->>>>>>> practica6
+
