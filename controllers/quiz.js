@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const Sequelize = require("sequelize");
 const Op = Sequelize.Op;
 const {models} = require("../models");
@@ -10,8 +10,8 @@ exports.load = (req, res, next, quizId) => {
 
     models.quiz.findById(quizId, {
         include: [
-            {models.tip, include:[{model: models.user, as: 'author'}]},
-            {model: models.user, as: 'author'}
+        {model: models.tip, include:[{model: models.user, as: 'author'}] },
+        {model: models.user, as: 'author'}
         ]
     })
     .then(quiz => {
@@ -226,9 +226,7 @@ exports.check = (req, res, next) => {
         answer
     });
 };
-=======
-const Sequelize = require("sequelize");
-const {models} = require("../models");
+
 
 // Autoload the quiz with id equals to :quizId
 exports.load = (req, res, next, quizId) => {
