@@ -74,3 +74,4 @@ exports.destroy = (req, res, next) => {
     })
     .catch(error => next(error));
 };
+
